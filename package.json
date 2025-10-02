@@ -1,0 +1,41 @@
+{
+  "name": "email-sorter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "tsx src/index.ts",
+    "import": "tsx emails.ts",
+    "list": "tsx emails-query.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.42",
+    "@aws-sdk/client-s3vectors": "^3.899.0",
+    "@mastra/core": "^0.19.1",
+    "@mastra/rag": "^1.2.7",
+    "@mastra/s3vectors": "^0.2.4",
+    "ai": "^5.0.59",
+    "imap-simple": "^5.1.0",
+    "mailparser": "^3.7.4",
+    "nodemailer": "^7.0.6",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^24.5.2",
+    "@types/nodemailer": "^7.0.1",
+    "mastra": "^0.13.4",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
